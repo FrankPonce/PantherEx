@@ -1,0 +1,40 @@
+/* Seller Info */
+.seller-info {
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  .seller-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .seller-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .seller-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .seller-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .seller-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .seller-score {
+    font-size: 1rem;
+    color: #666;
+  }
+  

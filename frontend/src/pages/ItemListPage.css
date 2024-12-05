@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Okta+Neue:wght@400;500;600;700&display=swap');
+
+body {
+  background-color: #FFFEFB;
+  font-family: 'Okta Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Item List Page */
+.item-list-page {
+  display: flex;
+}
+
+/* Filters Container */
+.filters-container {
+  flex: 0 0 250px; /* Fixed width and no shrink/grow */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background-color: #F9F9F9;
+  border-right: 1px solid #e5e5e5;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-label {
+  font-weight: 500;
+  color: #B6922E;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.filter-input,
+.filter-select,
+.color-dropdown-btn {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background-color: #FFFEFB;
+  color: #333;
+  font-family: 'Okta Neue', sans-serif;
+  position: relative;
+}
+
+.filter-input::placeholder {
+  color: #999;
+}
+
+.clear-filters-btn {
+  padding: 10px;
+  background-color: #B6922E;
+  color: #FFFEFB;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.clear-filters-btn:hover {
+  opacity: 0.9;
+}
+
+/* Color Dropdown Styling */
+.color-dropdown-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.color-grid-dropdown {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4px;
+  padding: 10px;
+  background: #FFFDF7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 10;
+  width: 200px;
+  margin-top: 5px;
+}
+
+.color-swatch {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.color-swatch:hover {
+  border-color: #09B1BA;
+}
+
+.color-selected {
+  border: 2px solid #09B1BA;
+  border-radius: 4px;
+}
+
+/* Item List Container */
+.item-list-container {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.item-list-title {
+  font-size: 2rem;
+  color: #B6922E;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Item List */
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+/* Item Card */
+.item-card {
+  width: 200px;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.item-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.item-brand,
+.item-size,
+.item-price {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #333;
+}
+
+.item-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .item-list-page {
+    flex-direction: column;
+  }
+
+  .filters-container {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .form-field {
+    flex: 1 1 45%;
+    min-width: 150px;
+  }
+
+  .item-list-container {
+    padding: 10px;
+  }
+}
+
+/* Masonry Layout Adjustments */
+.item-list {
+  display: flex;
+  margin-left: 20px; /* Adjust to match the gap */
+  width: auto;
+}
+
+.item-list-column {
+  padding-left: -20px; /* Adjust to match the gap */
+  background-clip: padding-box;
+}
+
+/* Remove margin-bottom from item-card as Masonry handles spacing */
+.item-card {
+  margin-bottom: 30px;
+  
+}
