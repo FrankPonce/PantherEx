@@ -127,7 +127,7 @@ npm start
 
 ---
 
-##🕹️ Usage
+## 🕹️ Usage
 
 - **Register an Account:** Sign up using your email and create a secure password.
 - **Log In:** Access your account with your credentials.
@@ -139,12 +139,12 @@ npm start
 - **Receive Notifications:** Stay informed with real-time updates on your transactions and interactions.
 
 ---
-##🌐 Deployment
+## 🌐 Deployment
 
 The app will soon be deployed on Render
 
 ---
-##🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please follow these steps:
 
