@@ -2,8 +2,8 @@
 
 Panther Exchange is a dynamic web application designed to facilitate seamless transactions between users. Whether you're looking to buy, sell, or trade items, Panther Exchange provides a secure and user-friendly platform to meet your needs.
 
-🔗 **Live App**: [Panther Exchange on Render](https://panther-exchange.onrender.com/)
-
+🔗 **Live App**: [Panther Exchange on Render](https://pantherex.onrender.com/)
+**The backend is yet to be deployed**
 ---
 
 ## 📜 Table of Contents
